@@ -1,6 +1,6 @@
 .:53 {
     # Utiliser le plugin "file" pour servir des zones DNS statiques
-    file /etc/coredns/zones/example.db example.org
+    file /etc/coredns/zones/example.db djenkoit.fr
 
     # Utiliser le plugin "log" pour enregistrer les requêtes DNS
     log

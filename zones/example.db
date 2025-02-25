@@ -1,5 +1,5 @@
-$ORIGIN example.org.
-@       3600 IN SOA  ns1.example.org. admin.example.org. (
+$ORIGIN djenkoit.fr.
+@       3600 IN SOA  ns1.djenkoit.fr. admin.djenkoit.fr. (
                         2023101001 ; Serial
                         7200       ; Refresh
                         3600       ; Retry
@@ -7,7 +7,7 @@ $ORIGIN example.org.
                         3600       ; Minimum TTL
                     )
 
-@       3600 IN NS   ns1.example.org.
+@       3600 IN NS   ns1.djenkoit.fr.
 @       3600 IN A    192.168.1.100
 ns1     3600 IN A    192.168.1.100
-www     3600 IN A    192.168.1.101
+teleport     3600 IN A    192.168.1.188  # Enregistrement A pour teleport.djenkoit.fr
