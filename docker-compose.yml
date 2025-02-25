@@ -4,7 +4,6 @@ services:
   coredns:
     image: coredns/coredns:latest
     container_name: coredns
-    user: root
     ports:
       - "53:53/udp"  # Expose le port DNS (UDP)
       - "53:53/tcp"  # Expose le port DNS (TCP)
