@@ -10,4 +10,4 @@ $ORIGIN djenkoit.fr.
 @       3600 IN NS   ns1.djenkoit.fr.
 @       3600 IN A    192.168.1.100
 ns1     3600 IN A    192.168.1.100
-teleport     3600 IN A    192.168.1.188  # Enregistrement A pour teleport.djenkoit.fr
+teleport     3600 IN A    192.168.1.188
