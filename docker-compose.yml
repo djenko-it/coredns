@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  coredns:
+    image: coredns/coredns:latest
+    container_name: coredns
+    ports:
+      - "53:53/udp"  # Expose le port DNS (UDP)
+      - "53:53/tcp"  # Expose le port DNS (TCP)
+    volumes:
+      - ./Corefile:/Corefile  # Monte le fichier de configuration Corefile
+      - ./zones:/etc/coredns/zones  # Monte le dossier des zones DNS (optionnel)
+    command: -conf /Corefile  # Spécifie le fichier de configuration
+    restart: unless-stopped

@@ -1,0 +1,13 @@
+.:53 {
+    # Utiliser le plugin "file" pour servir des zones DNS statiques
+    file /etc/coredns/zones/example.db example.org
+
+    # Utiliser le plugin "log" pour enregistrer les requêtes DNS
+    log
+
+    # Utiliser le plugin "errors" pour afficher les erreurs
+    errors
+
+    # Utiliser le plugin "forward" pour rediriger les requêtes vers un autre serveur DNS
+    forward . 8.8.8.8 8.8.4.4
+}
